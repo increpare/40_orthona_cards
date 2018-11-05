@@ -1,0 +1,22 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width='100%' viewBox='-2.5 -7.5 25 35' version='1.1'>
+	
+	<defs>
+
+  	<pattern id="pattern" x="0" y="0" width="42" height="44" patternUnits="userSpaceOnUse" patternTransform="scale(0.2 0.2)">
+		<g id="Page-1" fill="none" fill-rule="evenodd"><g id="brick-wall" fill="#eb8931"><path d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/></g></g>
+ 	</pattern>
+ 
+ </defs>
+ 
+<rect x="-2.5" y="-7.5" width="25" height="35" stroke="none" style="fill: #a46422" />
+<rect x="-2.5" y="-7.5" width="25" height="35" stroke="none" stroke-width="5px" fill="url(#pattern)" /> 
+<g transform="translate(-2.5,-2.5)" >
+<g transform="scale(1.25,1.25)" >
+ 		
+	<path stroke-linejoin="round" stroke-width='0.5' fill='white' stroke='black' d='M 6.368794326241135 3.191489361702127 L 6.368794326241135 14.539007092198581 L 13.631205673758865 14.539007092198581 L 13.631205673758865 7.7304964539007095 L 8.865248226950355 7.7304964539007095 L 8.865248226950355 3.191489361702127 C 8.865248226950355 0.9219858156028362 6.368794326241135 0.9219858156028362 6.368794326241135 3.191489361702127 Z  '/>
+
+</g>
+</g>
+</svg>
+	
