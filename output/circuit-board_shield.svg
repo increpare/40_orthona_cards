@@ -1,5 +1,5 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" width='816px' height="1110px" viewBox='-2.5 -7.5 25 35' version='1.1'>
+<svg xmlns="http://www.w3.org/2000/svg" width='408px' height="555px" viewBox='-2.5 -7.5 25 35' version='1.1'>
 	
 	<defs>
 
@@ -13,8 +13,13 @@
 <rect x="-3.5" y="-8.5" width="27" height="37" stroke="none" stroke-width="5px" fill="url(#pattern)" /> 
 <g transform="translate(-2.5,-2.5)" >
 <g transform="scale(1.25,1.25)" >
-
-	<path stroke-linejoin="round" stroke-width='0.5' fill='white' stroke='black' d='M 8.297872340425531 8.297872340425531 L 8.297872340425531 4.8936170212765955 L 11.702127659574469 4.8936170212765955 L 11.702127659574469 8.297872340425531 L 15.106382978723405 8.297872340425531 L 15.106382978723405 11.702127659574469 L 11.702127659574469 11.702127659574469 L 11.702127659574469 15.106382978723405 L 8.297872340425531 15.106382978723405 L 8.297872340425531 11.702127659574469 L 4.8936170212765955 11.702127659574469 L 4.8936170212765955 8.297872340425531 Z  '/>
+		
+<g transform="scale(0.8,.8)" stroke-miterlimit='10' stroke-linejoin="round" stroke-width='0.5' fill='white' stroke='black' >
+	<circle class="cls-2" cx="12.5" cy="12.5" r="6.7"/>
+	<line class="cls-2" x1="12.5" y1="5.8" x2="12.5" y2="19.2"/>
+	<line class="cls-2" x1="5.8" y1="12.5" x2="19.2" y2="12.5"/>
+	<circle class="cls-2" cx="12.5" cy="12.5" r="2.23"/>
+</g>
 
 </g>
 </g>

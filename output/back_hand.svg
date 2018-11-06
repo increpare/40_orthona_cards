@@ -1,5 +1,5 @@
 
-	<svg xmlns="http://www.w3.org/2000/svg" width='816px' height="1110px"  viewBox='-2.5 -7.5 25 35' version='1.1' style="background: black;" >
+	<svg xmlns="http://www.w3.org/2000/svg" width='408px' height="555px"  viewBox='-2.5 -7.5 25 35' version='1.1' style="background: black;" >
 
   <defs>
   	<pattern id="pattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="scale(0.2 0.2)">
@@ -7,12 +7,22 @@
 			<g id="brick-wall" fill="#eb8931">
 				<g transform="translate(-1,-1)">
 				 		
-	<path stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' d='M 6.368794326241135 3.191489361702127 L 6.368794326241135 14.539007092198581 L 13.631205673758865 14.539007092198581 L 13.631205673758865 7.7304964539007095 L 8.865248226950355 7.7304964539007095 L 8.865248226950355 3.191489361702127 C 8.865248226950355 0.9219858156028362 6.368794326241135 0.9219858156028362 6.368794326241135 3.191489361702127 Z  '/>
+<g transform="scale(0.8,.8)" stroke-miterlimit='10' stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' >
+	<polygon class="cls-2" points="18.01 5.67 14.86 5.94 9.11 12.77 12.53 15.64 18.28 8.81 18.01 5.67"/>
+	<polygon class="cls-2" points="5.97 13.04 7.41 11.33 14.24 17.08 12.8 18.79 7.68 14.48 5.97 13.04"/>
+	<rect class="cls-2" x="5.72" y="16.51" width="4.46" height="2.23" transform="translate(-10.66 12.36) rotate(-49.92)"/>
+	<line class="cls-2" x1="10.82" y1="14.21" x2="15.13" y2="9.08"/>
+</g>
 
 				</g>
 				<g transform="translate(14,14)">
 				 		
-	<path stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' d='M 6.368794326241135 3.191489361702127 L 6.368794326241135 14.539007092198581 L 13.631205673758865 14.539007092198581 L 13.631205673758865 7.7304964539007095 L 8.865248226950355 7.7304964539007095 L 8.865248226950355 3.191489361702127 C 8.865248226950355 0.9219858156028362 6.368794326241135 0.9219858156028362 6.368794326241135 3.191489361702127 Z  '/>
+<g transform="scale(0.8,.8)" stroke-miterlimit='10' stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' >
+	<polygon class="cls-2" points="18.01 5.67 14.86 5.94 9.11 12.77 12.53 15.64 18.28 8.81 18.01 5.67"/>
+	<polygon class="cls-2" points="5.97 13.04 7.41 11.33 14.24 17.08 12.8 18.79 7.68 14.48 5.97 13.04"/>
+	<rect class="cls-2" x="5.72" y="16.51" width="4.46" height="2.23" transform="translate(-10.66 12.36) rotate(-49.92)"/>
+	<line class="cls-2" x1="10.82" y1="14.21" x2="15.13" y2="9.08"/>
+</g>
 
 				</g>
 			</g>
@@ -22,7 +32,12 @@
 
 <rect x="-3.5" y="-8.5" width="27" height="37"  fill="url(#pattern)" />
  		
-	<path stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' d='M 6.368794326241135 3.191489361702127 L 6.368794326241135 14.539007092198581 L 13.631205673758865 14.539007092198581 L 13.631205673758865 7.7304964539007095 L 8.865248226950355 7.7304964539007095 L 8.865248226950355 3.191489361702127 C 8.865248226950355 0.9219858156028362 6.368794326241135 0.9219858156028362 6.368794326241135 3.191489361702127 Z  '/>
+<g transform="scale(0.8,.8)" stroke-miterlimit='10' stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' >
+	<polygon class="cls-2" points="18.01 5.67 14.86 5.94 9.11 12.77 12.53 15.64 18.28 8.81 18.01 5.67"/>
+	<polygon class="cls-2" points="5.97 13.04 7.41 11.33 14.24 17.08 12.8 18.79 7.68 14.48 5.97 13.04"/>
+	<rect class="cls-2" x="5.72" y="16.51" width="4.46" height="2.23" transform="translate(-10.66 12.36) rotate(-49.92)"/>
+	<line class="cls-2" x1="10.82" y1="14.21" x2="15.13" y2="9.08"/>
+</g>
 
 </svg>
 	

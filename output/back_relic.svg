@@ -1,18 +1,26 @@
 
-	<svg xmlns="http://www.w3.org/2000/svg" width='816px' height="1110px"  viewBox='-2.5 -7.5 25 35' version='1.1' style="background: black;" >
+	<svg xmlns="http://www.w3.org/2000/svg" width='408px' height="555px"  viewBox='-2.5 -7.5 25 35' version='1.1' style="background: black;" >
 
   <defs>
   	<pattern id="pattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="scale(0.2 0.2)">
 		<g id="Page-1" fill="none" fill-rule="evenodd">
 			<g id="brick-wall" fill="#eb8931">
 				<g transform="translate(-1,-1)">
-						
-	<path stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' d='M 10 14.539007092198581 L 13.930895449801707 12.26950354609929 L 13.930895449801708 7.7304964539007095 L 10 5.460992907801418 L 6.069104550198293 7.730496453900707 L 6.069104550198291 12.269503546099287 L 9.999999999999998 14.539007092198581 Z M 10 10 L 10 14.539007092198581 M 10 10 L 13.930895449801708 7.7304964539007095 M 10 10 L 6.069104550198293 7.730496453900707   '/>
+							
+<g transform="scale(0.8,.8)" stroke-miterlimit='10' stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' >
+	<path class="cls-2" d="M8,18.08h3.34V11.37a1.11,1.11,0,0,1,1.11-1.1h0a1.13,1.13,0,0,1,1.13,1.13v6.68H17V8H8Z"/>
+	<rect class="cls-2" x="8.0" y="6.92" width="9" height="1.12"/>
+	<rect class="cls-2" x="11.38" y="6.92" width="2.23" height="1.12"/>
+</g>
 
 				</g>
 				<g transform="translate(14,14)">
-						
-	<path stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' d='M 10 14.539007092198581 L 13.930895449801707 12.26950354609929 L 13.930895449801708 7.7304964539007095 L 10 5.460992907801418 L 6.069104550198293 7.730496453900707 L 6.069104550198291 12.269503546099287 L 9.999999999999998 14.539007092198581 Z M 10 10 L 10 14.539007092198581 M 10 10 L 13.930895449801708 7.7304964539007095 M 10 10 L 6.069104550198293 7.730496453900707   '/>
+							
+<g transform="scale(0.8,.8)" stroke-miterlimit='10' stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' >
+	<path class="cls-2" d="M8,18.08h3.34V11.37a1.11,1.11,0,0,1,1.11-1.1h0a1.13,1.13,0,0,1,1.13,1.13v6.68H17V8H8Z"/>
+	<rect class="cls-2" x="8.0" y="6.92" width="9" height="1.12"/>
+	<rect class="cls-2" x="11.38" y="6.92" width="2.23" height="1.12"/>
+</g>
 
 				</g>
 			</g>
@@ -21,8 +29,12 @@
 </defs>
 
 <rect x="-3.5" y="-8.5" width="27" height="37"  fill="url(#pattern)" />
-		
-	<path stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' d='M 10 14.539007092198581 L 13.930895449801707 12.26950354609929 L 13.930895449801708 7.7304964539007095 L 10 5.460992907801418 L 6.069104550198293 7.730496453900707 L 6.069104550198291 12.269503546099287 L 9.999999999999998 14.539007092198581 Z M 10 10 L 10 14.539007092198581 M 10 10 L 13.930895449801708 7.7304964539007095 M 10 10 L 6.069104550198293 7.730496453900707   '/>
+			
+<g transform="scale(0.8,.8)" stroke-miterlimit='10' stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' >
+	<path class="cls-2" d="M8,18.08h3.34V11.37a1.11,1.11,0,0,1,1.11-1.1h0a1.13,1.13,0,0,1,1.13,1.13v6.68H17V8H8Z"/>
+	<rect class="cls-2" x="8.0" y="6.92" width="9" height="1.12"/>
+	<rect class="cls-2" x="11.38" y="6.92" width="2.23" height="1.12"/>
+</g>
 
 </svg>
 	
