@@ -250,8 +250,8 @@ function genCard(patternname,shapename,pattern_body, shape_body,bg,fg){
 ${pattern_body}
  </defs>
  
-<rect x="-2.5" y="-7.5" width="25" height="35" stroke="none" style="fill: ${bg}" />
-<rect x="-2.5" y="-7.5" width="25" height="35" stroke="none" stroke-width="5px" fill="url(#pattern)" /> 
+<rect x="-3.5" y="-8.5" width="27" height="37" stroke="none" style="fill: ${bg}" />
+<rect x="-3.5" y="-8.5" width="27" height="37" stroke="none" stroke-width="5px" fill="url(#pattern)" /> 
 <g transform="translate(-2.5,-2.5)" >
 <g transform="scale(1.25,1.25)" >
 ${shape_body}
@@ -282,7 +282,7 @@ function genBack(pattern_name,pattern_data){
  	</pattern>
 </defs>
 
-<rect x="-2.5" y="-7.5" width="25" height="35"  fill="url(#pattern)" />
+<rect x="-3.5" y="-8.5" width="27" height="37"  fill="url(#pattern)" />
 ${pattern_data}
 </svg>
 	`;
@@ -318,7 +318,7 @@ for (var i=0;i<goodpatterns.length;i++){
 		var cardText = genCard(pattern_name,icon_name,pattern_data,icon_data,bg,fg);
 		var fn = `output/${pattern_name}_${icon_name}.svg`;
 		fs.writeFileSync(fn, cardText,'utf8');				
-		// exec(`convert-svg-to-png ${fn}`);
+		exec(`convert-svg-to-png ${fn}`);
     }      
 }
 
@@ -327,5 +327,5 @@ for (const [icon_name, icon_data] of Object.entries(icons)) {
 	var backText = genBack(icon_name,icon_data);
 	var fn = `output/back_${icon_name}.svg`;
 	fs.writeFileSync(fn, backText,'utf8');				
-	// exec(`convert-svg-to-png ${fn}`);
+	exec(`convert-svg-to-png ${fn}`);
 }

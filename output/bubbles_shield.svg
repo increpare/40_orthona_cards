@@ -13,8 +13,8 @@
  
  </defs>
  
-<rect x="-2.5" y="-7.5" width="25" height="35" stroke="none" style="fill: #005784" />
-<rect x="-2.5" y="-7.5" width="25" height="35" stroke="none" stroke-width="5px" fill="url(#pattern)" /> 
+<rect x="-3.5" y="-8.5" width="27" height="37" stroke="none" style="fill: #005784" />
+<rect x="-3.5" y="-8.5" width="27" height="37" stroke="none" stroke-width="5px" fill="url(#pattern)" /> 
 <g transform="translate(-2.5,-2.5)" >
 <g transform="scale(1.25,1.25)" >
 
