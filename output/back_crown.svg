@@ -1,0 +1,28 @@
+
+	<svg xmlns="http://www.w3.org/2000/svg" width='816px' height="1110px"  viewBox='-2.5 -7.5 25 35' version='1.1' style="background: black;" >
+
+  <defs>
+  	<pattern id="pattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="scale(0.2 0.2)">
+		<g id="Page-1" fill="none" fill-rule="evenodd">
+			<g id="brick-wall" fill="#eb8931">
+				<g transform="translate(-1,-1)">
+				
+	<path stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' d='M 4.326241134751773 5.460992907801419 L 4.326241134751773 13.404255319148936 L 15.673758865248228 13.404255319148936 L 15.673758865248228 5.460992907801419 L 12.836879432624114 8.865248226950355 L 10 5.460992907801419 L 7.163120567375887 8.865248226950355 Z '/>
+
+				</g>
+				<g transform="translate(14,14)">
+				
+	<path stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' d='M 4.326241134751773 5.460992907801419 L 4.326241134751773 13.404255319148936 L 15.673758865248228 13.404255319148936 L 15.673758865248228 5.460992907801419 L 12.836879432624114 8.865248226950355 L 10 5.460992907801419 L 7.163120567375887 8.865248226950355 Z '/>
+
+				</g>
+			</g>
+		</g>
+ 	</pattern>
+</defs>
+
+<rect x="-2.5" y="-7.5" width="25" height="35"  fill="url(#pattern)" />
+
+	<path stroke-linejoin="round" stroke-width='0.5' fill='black' stroke='white' d='M 4.326241134751773 5.460992907801419 L 4.326241134751773 13.404255319148936 L 15.673758865248228 13.404255319148936 L 15.673758865248228 5.460992907801419 L 12.836879432624114 8.865248226950355 L 10 5.460992907801419 L 7.163120567375887 8.865248226950355 Z '/>
+
+</svg>
+	

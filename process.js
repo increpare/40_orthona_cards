@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 
 var fs = require('fs');
+const { exec } = require('child_process');
 
 var icons = {};
+
+var cardw=816;
+var cardh=1110;
 
 goodpatterns=[
 "aztek",
@@ -15,7 +19,6 @@ goodpatterns=[
 "hexagons",
 "hideout",
 "jupiter",
-//"rounded-plus-connected"
 ];
 
 icons["hand"]=` 		
@@ -100,7 +103,7 @@ patterns["aztek"]=`
  `;
 
  patterns["dominos"]=`
-  	<pattern id="pattern" x="0" y="0" width="126" height="84" patternUnits="userSpaceOnUse" patternTransform="scale(0.1 0.1)">
+  	<pattern id="pattern" x="20" y="20" width="126" height="84" patternUnits="userSpaceOnUse" patternTransform="scale(0.1 0.1)">
 		<g fill-rule="evenodd"><g fill="#000000"><path d="M126 83v1H0v-2h40V42H0v-2h40V0h2v40h40V0h2v40h40V0h2v83zm-2-1V42H84v40h40zM82 42H42v40h40V42zm-50-6a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm96 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm-42 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm30-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM20 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 24a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24-42a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></g></g>
  	</pattern>
  `;
@@ -131,8 +134,8 @@ patterns["aztek"]=`
  `;
 
  patterns["hideout"]=`
-  	<pattern id="pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="scale(0.2 0.2)">
-  		<g id="Page-1" fill="none" fill-rule="evenodd"><g id="Artboard-5" fill="#000000"><path id="Combined-Shape" d="M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z"/></g></g>
+  	<pattern id="pattern" x="5" y="5" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="scale(0.2 0.2)">
+  		<g  id="Page-1" fill="none" fill-rule="evenodd"><g id="Artboard-5" fill="#000000"><path id="Combined-Shape" d="M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z"/></g></g>
  	</pattern>
  `;
 
@@ -241,7 +244,7 @@ function genCard(patternname,shapename,pattern_body, shape_body,bg,fg){
 	pattern_body = pattern_body.replace(/\#000000/g,fg);
 	pattern_body = pattern_body.replace(/\#000/g,fg);
 	var template = `
-<svg xmlns="http://www.w3.org/2000/svg" width='100%' viewBox='-2.5 -7.5 25 35' version='1.1'>
+<svg xmlns="http://www.w3.org/2000/svg" width='${cardw}px' height="${cardh}px" viewBox='-2.5 -7.5 25 35' version='1.1'>
 	
 	<defs>
 ${pattern_body}
@@ -260,6 +263,35 @@ ${shape_body}
 
 }
 
+function genBack(pattern_name,pattern_data){
+	var template=`
+	<svg xmlns="http://www.w3.org/2000/svg" width='${cardw}px' height="${cardh}px"  viewBox='-2.5 -7.5 25 35' version='1.1' style="background: white;" >
+
+  <defs>
+  	<pattern id="pattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="scale(0.2 0.2)">
+		<g id="Page-1" fill="none" fill-rule="evenodd">
+			<g id="brick-wall" fill="#eb8931">
+				<g transform="translate(-1,-1)">
+				${pattern_data}
+				</g>
+				<g transform="translate(14,14)">
+				${pattern_data}
+				</g>
+			</g>
+		</g>
+ 	</pattern>
+</defs>
+
+<rect x="-2.5" y="-7.5" width="25" height="35"  fill="url(#pattern)" />
+${pattern_data}
+</svg>
+	`;
+	template=template.replace(/white/g,"purple");
+	template=template.replace(/black/g,"white");
+	template=template.replace(/purple/g,"black");
+	return template;
+}
+
 var col_pairs = [
 	["#f78ed6","#be2633"],
 	["#342a97","#225af6"],
@@ -267,8 +299,8 @@ var col_pairs = [
 	["#31a2f2","#005784"],
 	["#15c2a5","#14807e"],
 	["#f7e26b","#493c2b"],
-	["#ec4700","#732930"],
-	["#b2dcef","#fab40b"],
+	["#b2dcef","#732930"],
+	["#ec4700","#fab40b"],
 	["#ad9d33","#115e33"],
 	["#9964f9","#524f40"]
 ];
@@ -284,7 +316,16 @@ for (var i=0;i<goodpatterns.length;i++){
 		var fg = col_pairs[i][0];
 
 		var cardText = genCard(pattern_name,icon_name,pattern_data,icon_data,bg,fg);
-		fs.writeFile(`output/${pattern_name}_${icon_name}.svg`, cardText,'utf8', function (err) {});				
+		var fn = `output/${pattern_name}_${icon_name}.svg`;
+		fs.writeFileSync(fn, cardText,'utf8');				
+		// exec(`convert-svg-to-png ${fn}`);
     }      
-    //col_index=(col_index+1)%10;
+}
+
+
+for (const [icon_name, icon_data] of Object.entries(icons)) {
+	var backText = genBack(icon_name,icon_data);
+	var fn = `output/back_${icon_name}.svg`;
+	fs.writeFileSync(fn, backText,'utf8');				
+	// exec(`convert-svg-to-png ${fn}`);
 }
